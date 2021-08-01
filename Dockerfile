@@ -13,6 +13,3 @@ RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*
 
 WORKDIR $APP_ROOT
-
-RUN go get -u github.com/oxequa/realize
-CMD ["realize", "start"]
